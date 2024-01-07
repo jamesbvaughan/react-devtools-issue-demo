@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React devtools issue demo</title>
+</head>
+
+<body>
+  <h1>React devtools extension issue demo</h1>
+  <p>
+    This page demonstrates an issue with the React devtools extension. Hook
+    name parsing fails if a hook makes use of
+    <code>useSyncExternalStore</code> of <code>useTransition</code>.
+  </p>
+  <p>
+    To reproduced the issue, open up the dev tools on this page, navigate to
+    the "Components" tab, and click the "Parse hook names" button on the right
+    sidebar with the different components selected.
+  </p>
+  <p>
+    See the
+    <a href="https://github.com/facebook/react/issues/27889">GitHub issue</a>
+    for more context and discussion.
+  </p>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
